@@ -50,3 +50,8 @@
 body {
     background: rgb(252, 252, 252);
 }
+
+.header-padding {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}

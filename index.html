@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="assets/styles/salesforce-lightning-design-system.css ">
     <link rel="stylesheet" href="assets/styles/custom.css">
     <link rel="icon" type="image/ico" href="assets/icons/icons8-notification-24.png">
+
+
 </head>
 
 <body>
@@ -320,6 +322,16 @@
     </div>
     </div>
 
+
+    <script>
+        let wrap = document.getElementsByClassName('slds-wrap')[0];
+        wrap.onclick = function(e) {
+            let body = document.getElementsByTagName('body')[0];
+            let content = e.target.parentElement.previousElementSibling;
+            let copy = content.cloneNode(true);
+            body.prepend(copy);
+        }
+    </script>
 
 
 
